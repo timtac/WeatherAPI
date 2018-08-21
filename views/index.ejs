@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Weather Report</title>
+
+		<h3></h3>
+	</head>
+
+	<body>
+		<div>
+			<h3><%= weather.results.channel.location.country%>, <%= weather.results.channel.location.city%>. <%= weather.results.channel.location.region%></h3>
+			<ul>
+				<li>Wind Speed: <%= weather.results.channel.wind.speed%></li>
+				<li>Wind Direction: <%= weather.results.channel.wind.direction%></li>
+				<li>Wind Chill: <%= weather.results.channel.wind.chill%></li>
+				<li>Atmosphere Humidity: <%= weather.results.channel.atmosphere.humidity%></li>
+				<li>Atmosphere Pressure: <%= weather.results.channel.atmosphere.pressure%></li>
+				<li>Time: <%= weather.created%></li>
+			</ul>
+		</div>
+	</body>
+</html>
